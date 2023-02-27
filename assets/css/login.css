@@ -1,0 +1,22 @@
+body{
+    background-image: url('../img/background-img/bg002.png');
+    background-size: cover;
+}
+
+.log-in-holder{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.log-in-placeholder{
+    width: 30%;
+    background-color: #eaeaea77;
+    height: 50vh;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
