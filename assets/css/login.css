@@ -1,22 +1,135 @@
 body{
-    background-image: url('../img/background-img/bg002.png');
-    background-size: cover;
-}
-
-.log-in-holder{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 .log-in-placeholder{
-    width: 30%;
+    width: 60%;
     background-color: #eaeaea77;
-    height: 50vh;
     border-radius: 20px;
     backdrop-filter: blur(10px);
     box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    align-self: center;
+    display: inline-flex;
+    overflow: hidden;
+    margin-top: 30px;
+    max-width: 760px;
+    transition-duration: 1s;
+}
+
+.log-in-placeholder .left{
+    width: 50%;
+    float: left;
+    position: relative;
+}
+
+.log-in-placeholder .left img{
+    position: absolute; /* Set position to absolute */
+    top: 0; /* Align to top of parent div */
+    left: 0; /* Align to left of parent div */
+    width: 100%; /* Set width to 100% of parent div */
+    height: 100%; /* Set height to 100% of parent div */
+    object-fit: cover; /* Set object-fit property to cover */
+    /*code form chat GPT*/
+}
+
+.log-in-placeholder .right{
+    width: 50%;
+    float: right;
+}
+
+.log-in-placeholder .right form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.log-in-placeholder .right input{
+    width: 100%;
+    padding: 12px 20px;
+    padding-left: 35px;
+    margin: 8px 0;
+    margin-top: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.log-in-placeholder .right form .label {
+    width: 70%;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+}
+
+.label img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 7px;
+}
+
+button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: fit-content;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 10px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+    transition-duration: 1s;
+    border: 3px solid rgb(49, 8, 56);
+    background-color: rgba(49, 8, 56, 0);
+    color: rgb(49, 8, 56);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+@media (max-width: 970px) {
+    .log-in-placeholder{
+        width: 80%;
+    }
+}
+
+@media (max-width: 720px) {
+    .log-in-placeholder{
+        flex-direction: column;
+    }
+
+    .log-in-placeholder .left{
+        width: 100%;
+        height: 240px;
+    }
+    
+    .log-in-placeholder .right{
+        width: 100%;
+    }
+
+    .log-in-placeholder .right form{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .log-in-placeholder{
+        width: 100%;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        box-shadow: none;
+        background-color: #fff;
+        padding-bottom: 30px;
+    }
+
+    .log-in-placeholder .right form .label{
+        width: 90%;
+    }    
 }

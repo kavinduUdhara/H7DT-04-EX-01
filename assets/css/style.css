@@ -1,3 +1,26 @@
+:root {
+    --normal-txt: 'Sans-serif', Arial;
+}
+
 body {
     margin: 0;
+    font-family: var(--normal-txt);
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.title img{
+    width: 40px;
+    height: 40px;
+    padding-right: 10px;
 }
