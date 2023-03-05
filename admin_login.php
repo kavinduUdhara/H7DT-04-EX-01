@@ -21,7 +21,7 @@
         </div>
         <div class="right">
             <form id="login-form">
-                <div class="label" id="login-form">
+                <div class="label">
                     <img src="./assets/img/svg/at-outline.svg" alt="">
                     <input type="text" name="username" id="username" placeholder="user_name">
                 </div>

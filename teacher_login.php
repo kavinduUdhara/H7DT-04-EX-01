@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/css/scrool-bar.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/login.css">
+    <script src="./assets/js/login-ajax.js"></script>
 </head>
 <body>
     <div class="title">
@@ -19,7 +20,7 @@
             <img src="./assets/img/teacher-teaching.jpg" alt="">
         </div>
         <div class="right">
-            <form>
+            <form id="login-form">
                 <div class="label">
                     <img src="./assets/img/svg/at-outline.svg" alt="">
                     <input type="text" name="username" id="username" placeholder="user_name">
@@ -28,7 +29,7 @@
                     <img src="./assets/img/svg/lock-closed-outline.svg" alt="">
                     <input type="password" name="password" id="password" placeholder="password  *">
                 </div>
-                <button>Log-in</button>
+                <button type="button" onclick="login('teacher', document.getElementById('login-form'))">Log-in</button>
             </form>
         </div>
     </div>
